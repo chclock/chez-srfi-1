@@ -18,7 +18,7 @@
         '((0    cond-expand)
           (1    lists)
           (2    and-let*)
-        #;(5    let)
+          (5    let)
           (6    basic-string-ports)
           (8    receive)
           (9    records)

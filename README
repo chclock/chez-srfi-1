@@ -13,6 +13,7 @@ These SRFIs are available:
   (srfi :0 cond-expand)
   (srfi :1 lists)
   (srfi :2 and-let*)
+  (srfi :5 let)
   (srfi :6 basic-string-ports)
   (srfi :8 receive)
   (srfi :9 records)

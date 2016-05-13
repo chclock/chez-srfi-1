@@ -17,7 +17,7 @@
 (library (srfi :98 os-environment-variables)
   (export get-environment-variables
         (rename (getenv get-environment-variable)))
-  (import (only (chezscheme) getenv environ))
+  (import (only (chezscheme) getenv environment))
     
   (define (get-environment-variables . args)
     (assertion-violation 'get-environment-variables "not implemented")))
