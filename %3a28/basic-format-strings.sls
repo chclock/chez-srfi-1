@@ -22,8 +22,8 @@
 (library (srfi :28 basic-format-strings)
   (export format)
   (import
-    (scheme base)
-    (scheme write))
+    (rnrs base)
+    (rnrs write))
   (begin
     (define format
       (lambda (format-string . objects)
