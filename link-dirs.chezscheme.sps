@@ -26,7 +26,10 @@
     (let ((dir (current-directory)))
       (parameterize ((current-directory (string-append dir "/%3a2")))
         (printf "Linking ~a~n" "%3a2/and-let%2a.sls")
-        (system (format "ln -sf '~a' '~a'" "and-let%2a.sls" "and-let*.sls"))))]
+        (system (format "ln -sf '~a' '~a'" "and-let%2a.sls" "and-let*.sls")))
+      (parameterize ((current-directory (string-append dir "/%3a17")))
+        (printf "Linking ~a~n" "%3a2/generalized-set%21.sls")
+        (system (format "ln -sf '~a' '~a'" "generalized-set%21.sls" "generalized-set!.sls"))))]
     [(should-link? (car files))
      (link-file (car files))
      (file-loop (cdr files))]
