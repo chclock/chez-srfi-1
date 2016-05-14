@@ -21,6 +21,7 @@ These SRFIs are available:
   (srfi :13 strings)
   (srfi :14 char-sets)
   (srfi :16 case-lambda)
+  (srfi :17 generalized-set!)
   (srfi :19 time)
   (srfi :23 error)
   (srfi :25 multi-dimensional-arrays)
