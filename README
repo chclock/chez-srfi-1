@@ -37,6 +37,7 @@ These SRFIs are available:
   (srfi :43 vectors)
   (srfi :45 lazy)
   (srfi :48 intermediate-format-strings)
+  (srfi :60 integer-bits)
   (srfi :61 cond)
   (srfi :64 testing)
   (srfi :67 compare-procedures)
