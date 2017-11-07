@@ -77,7 +77,7 @@
                                         (if (symbol? a) (symbol->string a) a))
                                       args))))
         (let* ((n-str (number->string (number x)))
-               (colon-n (make-symbol ":" n-str))
+               (colon-n (make-symbol "s" n-str))
                (srfi-n (make-symbol "srfi-" n-str))
                (srfi-n-m (apply make-symbol srfi-n
                                 (map (lambda (m) (make-symbol "-" m))

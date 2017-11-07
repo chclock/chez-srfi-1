@@ -15,7 +15,7 @@
 (define srfi-libraries/mnemonics
   (map/filter (match-lambda
                 ;; NOTE: Uses only the 3-element names.
-                ((:and ('srfi (:symbol ":(\\d+)" num) _)
+                ((:and ('srfi (:symbol "s(\\d+)" num) _)
                        name)
                  (list (string->number (symbol->string num))
                        name))
@@ -40,8 +40,8 @@
           (lib-name (cadr x))
           (exports (list-sort symbol<?
                               (environment-symbols (environment lib-name))))
-          (alias-name `(srfi ,(string->symbol (format ":~d" srfi-num))))
-          (out-file (format "%3a~d.sls" srfi-num)))
+          (alias-name `(srfi ,(string->symbol (format "s~d" srfi-num))))
+          (out-file (format "s~d.sls" srfi-num)))
      (cond
        ((file-exists? out-file)
         (printf "Skipping ~a because it already exists.\n" out-file))
