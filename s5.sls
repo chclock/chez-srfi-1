@@ -1,5 +1,5 @@
 #!r6rs
-(library (srfi :5)
+(library (srfi s5)
   (export let)
-  (import (srfi :5 let))
+  (import (srfi s5 let))
 )

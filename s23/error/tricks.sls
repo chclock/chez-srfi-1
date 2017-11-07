@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :23 error tricks)
+(library (srfi s23 error tricks)
   (export
     SRFI-23-error->R6RS)
   (import

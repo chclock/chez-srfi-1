@@ -5,7 +5,7 @@
 ;; TODO: Are there any issues w.r.t. R6RS Unicode support when using the
 ;; pre-R6RS reference implementation?  I suspect there are.
 
-(library (srfi :14 char-sets)
+(library (srfi s14 char-sets)
   (export
     ; Predicates & comparison
     char-set? char-set= char-set<= char-set-hash
@@ -43,8 +43,8 @@
     (except (rnrs) define-record-type)
     (rnrs mutable-strings)
     (rnrs r5rs)
-    (srfi :23 error tricks)
-    (srfi :9 records)
+    (srfi s23 error tricks)
+    (srfi s9 records)
     (srfi private check-arg)
     (srfi private let-opt)
     (srfi private include))
@@ -55,6 +55,6 @@
   (define (%char->latin1 c)
     (char->integer c))
 
-  (SRFI-23-error->R6RS "(library (srfi :14 char-sets))"
-   (include/resolve ("srfi" "%3a14") "srfi-14.scm"))
+  (SRFI-23-error->R6RS "(library (srfi s14 char-sets))"
+   (include/resolve ("srfi" "s14") "srfi-14.scm"))
 )

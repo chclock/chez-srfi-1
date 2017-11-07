@@ -1,5 +1,5 @@
 #!r6rs
-(library (srfi :28)
+(library (srfi s28)
   (export format)
-  (import (srfi :28 basic-format-strings))
+  (import (srfi s28 basic-format-strings))
 )

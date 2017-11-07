@@ -19,14 +19,14 @@
 ;; CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 ;; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-(library (srfi :99 records syntactic)
+(library (srfi s99 records syntactic)
 
   (export define-record-type)
 
   (import (for (rnrs base) run expand)
           (for (rnrs lists) run expand)
           (for (rnrs syntax-case) run expand)
-          (srfi :99 records procedural))
+          (srfi s99 records procedural))
 
   (define-syntax define-record-type
     (syntax-rules ()

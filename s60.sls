@@ -1,5 +1,5 @@
 #!r6rs
-(library (srfi :60)
+(library (srfi s60)
   (export logand bitwise-and
           logior bitwise-ior
           logxor bitwise-xor
@@ -19,5 +19,5 @@
           integer->list
           list->integer
           booleans->integer)
-  (import (srfi :60 integer-bits))
+  (import (srfi s60 integer-bits))
 )

@@ -1,6 +1,7 @@
 .bzr
 srfi
 .bzrignore
+.#*
 *~
 *!*
 *\**

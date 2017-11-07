@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :13 strings)
+(library (srfi s13 strings)
   (export
     string-map string-map!
     string-fold       string-unfold
@@ -56,9 +56,9 @@
                    string-upcase string-downcase string-titlecase string-hash)
     (except (rnrs mutable-strings) string-fill!)
     (rnrs r5rs)
-    (srfi :23 error tricks)
-    (srfi :8 receive)
-    (srfi :14 char-sets)
+    (srfi s23 error tricks)
+    (srfi s8 receive)
+    (srfi s14 char-sets)
     (srfi private check-arg)
     (srfi private let-opt)
     (srfi private include))
@@ -66,6 +66,6 @@
   (define (char-cased? c)
     (char-upper-case? (char-upcase c)))
 
-  (SRFI-23-error->R6RS "(library (srfi :13 strings))"
-   (include/resolve ("srfi" "%3a13") "srfi-13.scm"))
+  (SRFI-23-error->R6RS "(library (srfi s13 strings))"
+   (include/resolve ("srfi" "s13") "srfi-13.scm"))
 )

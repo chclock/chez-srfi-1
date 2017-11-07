@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :27 random-bits)
+(library (srfi s27 random-bits)
   (export
     random-integer
     random-real
@@ -18,8 +18,8 @@
   (import
     (rnrs)
     (rnrs r5rs)
-    (only (srfi :19 time) current-time time-nanosecond)
-    (srfi :23 error tricks)
+    (only (srfi s19 time) current-time time-nanosecond)
+    (srfi s23 error tricks)
     (srfi private include))
 
   (define-record-type (:random-source :random-source-make :random-source?)
@@ -33,7 +33,7 @@
   (define (:random-source-current-time)
     (time-nanosecond (current-time)))
 
-  (SRFI-23-error->R6RS "(library (srfi :27 random-bits))"
-   (include/resolve ("srfi" "%3a27") "mrg32k3a-a.scm")
-   (include/resolve ("srfi" "%3a27") "mrg32k3a.scm"))
+  (SRFI-23-error->R6RS "(library (srfi s27 random-bits))"
+   (include/resolve ("srfi" "s27") "mrg32k3a-a.scm")
+   (include/resolve ("srfi" "s27") "mrg32k3a.scm"))
 )

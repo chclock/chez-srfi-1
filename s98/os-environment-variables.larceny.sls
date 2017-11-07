@@ -5,7 +5,7 @@
 ;; NOTE: I believe this currently works only on Linux.
 ;; NOTE: If Larceny's FFI changes, this may no longer work.
 
-(library (srfi :98 os-environment-variables)
+(library (srfi s98 os-environment-variables)
   (export
     get-environment-variable get-environment-variables)
   (import

@@ -2,7 +2,7 @@
 ;; Copyright 2009 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :43 vectors)
+(library (srfi s43 vectors)
   (export
     ;;; * Constructors
     make-vector vector
@@ -37,8 +37,8 @@
   (import
     (except (rnrs) vector-map vector-for-each)
     (rnrs r5rs)
-    (srfi :23 error tricks)
-    (srfi :8 receive)
+    (srfi s23 error tricks)
+    (srfi s8 receive)
     (for (srfi private vanish) expand)
     (srfi private include))
 
@@ -65,6 +65,6 @@
        (define-syntax
         (vanish-define define-syntax
          (receive))))
-    (SRFI-23-error->R6RS "(library (srfi :43 vectors))"
-     (include/resolve ("srfi" "%3a43") "vector-lib.scm")))
+    (SRFI-23-error->R6RS "(library (srfi s43 vectors))"
+     (include/resolve ("srfi" "s43") "vector-lib.scm")))
 )

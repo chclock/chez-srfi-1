@@ -19,7 +19,7 @@
 ;; CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 ;; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-(library (srfi :99 records inspection)
+(library (srfi s99 records inspection)
 
   (export record? record-rtd
           rtd-name rtd-parent
@@ -28,7 +28,7 @@
   (import (rnrs base)
           (rnrs lists)
           (rnrs records inspection)
-          (srfi :99 records helper))
+          (srfi s99 records helper))
 
   ; The record? predicate is already defined by (rnrs records inspection).
   

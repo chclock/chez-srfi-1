@@ -20,7 +20,7 @@
 ;; WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #!r6rs
-(library (srfi :5 let)
+(library (srfi s5 let)
   (export (rename (let+ let)))
   (import (rnrs base))
   (begin

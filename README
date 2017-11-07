@@ -12,7 +12,7 @@ implementation supporting the *.IMPL.sls convention is easy.
 These SRFIs are available:
   (srfi s0 cond-expand)
   (srfi s1 lists)
-  (srfi s2 and-let*)
+  (srfi s2 and-let)
   (srfi s5 let)
   (srfi s6 basic-string-ports)
   (srfi s8 receive)

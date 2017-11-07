@@ -1,5 +1,5 @@
 #!r6rs
-(library (srfi :17)
+(library (srfi s17)
   (export set! setter getter-with-setter)
-  (import (srfi :17 generalized-set!))
+  (import (srfi s17 generalized-set!))
 )

@@ -14,7 +14,7 @@
 ;;; TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 ;;; PERFORMANCE OF THIS SOFTWARE.
 
-(library (srfi :98 os-environment-variables)
+(library (srfi s98 os-environment-variables)
   (export get-environment-variables
         (rename (getenv get-environment-variable)))
   (import (only (chezscheme) getenv environment))

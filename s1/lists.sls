@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :1 lists)
+(library (srfi s1 lists)
   (export
     ;;; Exported:
     xcons #;tree-copy make-list list-tabulate list-copy
@@ -49,8 +49,8 @@
     (except (rnrs)
             assoc filter find fold-right for-each map member partition remove)
     (rnrs mutable-pairs)
-    (srfi :8 receive)
-    (srfi :23 error tricks)
+    (srfi s8 receive)
+    (srfi s23 error tricks)
     (for (srfi private vanish) expand)
     (srfi private check-arg)
     (srfi private include))
@@ -71,6 +71,6 @@
            (let-optionals (if (pair? a) (cdr a) '()) more . body))))))
 
   (let-syntax ((define (vanish-define define (cons*))))
-    (SRFI-23-error->R6RS "(library (srfi :1 lists))"
-     (include/resolve ("srfi" "%3a1") "srfi-1-reference.scm")))
+    (SRFI-23-error->R6RS "(library (srfi s1 lists))"
+     (include/resolve ("srfi" "s1") "srfi-1-reference.scm")))
 )

@@ -12,7 +12,7 @@
 ;;;
 ;;; All other code was written by William D Clinger.
 
-(library (srfi :38 with-shared-structure)
+(library (srfi s38 with-shared-structure)
 
   (export write-with-shared-structure write/ss
           read-with-shared-structure  read/ss)

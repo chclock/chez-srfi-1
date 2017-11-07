@@ -14,6 +14,6 @@
 ;;; TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 ;;; PERFORMANCE OF THIS SOFTWARE.
 
-(library (srfi :48 intermediate-format-strings compat)
+(library (srfi s48 intermediate-format-strings compat)
   (export pretty-print)
   (import (only (chezscheme) pretty-print)))

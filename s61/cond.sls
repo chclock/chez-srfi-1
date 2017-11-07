@@ -2,7 +2,7 @@
 ;; Copyright 2009 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :61 cond)
+(library (srfi s61 cond)
   (export
     (rename (general-cond cond)))
   (import

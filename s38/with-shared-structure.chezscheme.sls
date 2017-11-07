@@ -14,7 +14,7 @@
 ;;; TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 ;;; PERFORMANCE OF THIS SOFTWARE.
 
-(library (srfi :38 with-shared-structure)
+(library (srfi s38 with-shared-structure)
   (export write-with-shared-structure
           (rename (write-with-shared-structure write/ss))
           read-with-shared-structure

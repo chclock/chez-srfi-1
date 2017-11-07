@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :2 and-let*)
+(library (srfi s2 and-let)
   (export
     and-let*)
   (import

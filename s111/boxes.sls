@@ -1,5 +1,5 @@
 #!r6rs
-(library (srfi :111 boxes)
+(library (srfi s111 boxes)
   (export box box? unbox set-box!)
   (import (rnrs records syntactic)
           (rnrs base))

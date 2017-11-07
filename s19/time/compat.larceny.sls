@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :19 time compat)
+(library (srfi s19 time compat)
   (export
     time-resolution
     (rename (my:timezone-offset timezone-offset))
@@ -15,7 +15,7 @@
   (import
     (rnrs base)
     (primitives r5rs:require current-utc-time timezone-offset)
-    (srfi :19 time not-implemented))
+    (srfi s19 time not-implemented))
 
   (define dummy (begin (r5rs:require 'time) #F))
 

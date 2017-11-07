@@ -2,7 +2,7 @@
 ;; Copyright 2009 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :25 multi-dimensional-arrays all)
+(library (srfi s25 multi-dimensional-arrays all)
   (export
     array:make
     array:array?
@@ -77,7 +77,7 @@
     (rnrs)
     (rnrs mutable-pairs)
     (rnrs r5rs)
-    (srfi :23 error tricks)
+    (srfi s23 error tricks)
     (srfi private include))
 
   (define-record-type (array-type array:make array:array?)
@@ -85,8 +85,8 @@
             (immutable ind array:index)
             (immutable shp array:shape)))
 
-  (SRFI-23-error->R6RS "(library (srfi :25 multi-dimensional-arrays))"
-   (include/resolve ("srfi" "%3a25") "ix-ctor.scm")
-   (include/resolve ("srfi" "%3a25") "op-ctor.scm")
-   (include/resolve ("srfi" "%3a25") "array.scm"))
+  (SRFI-23-error->R6RS "(library (srfi s25 multi-dimensional-arrays))"
+   (include/resolve ("srfi" "s25") "ix-ctor.scm")
+   (include/resolve ("srfi" "s25") "op-ctor.scm")
+   (include/resolve ("srfi" "s25") "array.scm"))
 )

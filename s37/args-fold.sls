@@ -2,7 +2,7 @@
 ;; Copyright 2009 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :37 args-fold)
+(library (srfi s37 args-fold)
   (export
     args-fold
     (rename (make-option option))
@@ -38,6 +38,6 @@
 
   (define args-fold
     (let ((option make-option))
-      (include/resolve ("srfi" "%3a37") "srfi-37-reference.scm")
+      (include/resolve ("srfi" "s37") "srfi-37-reference.scm")
       args-fold))
 )

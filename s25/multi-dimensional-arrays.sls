@@ -2,7 +2,7 @@
 ;; Copyright 2009 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :25 multi-dimensional-arrays)
+(library (srfi s25 multi-dimensional-arrays)
   (export
     array?
     make-array
@@ -15,5 +15,5 @@
     array-set!
     share-array)
   (import
-    (srfi :25 multi-dimensional-arrays all))
+    (srfi s25 multi-dimensional-arrays all))
 )

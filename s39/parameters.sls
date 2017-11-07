@@ -4,7 +4,7 @@
 
 ;; Fall-back library in case the host Scheme system does not provide SRFI-39.
 
-(library (srfi :39 parameters)
+(library (srfi s39 parameters)
   (export
     make-parameter 
     parameterize)

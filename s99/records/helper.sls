@@ -22,7 +22,7 @@
 ; This library breaks a circular interdependence between the
 ; procedural and inspection layers.
 
-(library (srfi :99 records helper)
+(library (srfi s99 records helper)
   (export rtd?)
   (import (rnrs base) (rnrs records procedural))
 

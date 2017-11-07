@@ -19,7 +19,7 @@
 ;; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 ;; SOFTWARE.
 
-(library (srfi :28 basic-format-strings)
+(library (srfi s28 basic-format-strings)
   (export format)
   (import
     (rnrs base)

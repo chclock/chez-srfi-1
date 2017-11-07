@@ -2,7 +2,7 @@
 ;; Copyright 2010 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(library (srfi :78 lightweight-testing)
+(library (srfi s78 lightweight-testing)
   (export
     check
     check-ec
@@ -12,10 +12,10 @@
     check-passed?)
   (import
     (rnrs)
-    (srfi :78 lightweight-testing compat)
-    (srfi :39 parameters)
-    (srfi :42 eager-comprehensions)
-    (srfi :23 error tricks)
+    (srfi s78 lightweight-testing compat)
+    (srfi s39 parameters)
+    (srfi s42 eager-comprehensions)
+    (srfi s23 error tricks)
     (for (srfi private vanish) expand)
     (srfi private include))
 
@@ -27,6 +27,6 @@
   (define check:mode-param (make-parameter #F))
 
   (let-syntax ((define (vanish-define define (check:write check:mode))))
-    (SRFI-23-error->R6RS "(library (srfi :78 lightweight-testing))"
-     (include/resolve ("srfi" "%3a78") "check.scm")))
+    (SRFI-23-error->R6RS "(library (srfi s78 lightweight-testing))"
+     (include/resolve ("srfi" "s78") "check.scm")))
 )

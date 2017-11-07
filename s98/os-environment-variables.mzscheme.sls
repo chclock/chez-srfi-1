@@ -4,7 +4,7 @@
 
 ;; Inspired by Danny Yoo's get-environment PLaneT package.
 
-(library (srfi :98 os-environment-variables)
+(library (srfi s98 os-environment-variables)
   (export
     (rename (getenv get-environment-variable))
     get-environment-variables)
