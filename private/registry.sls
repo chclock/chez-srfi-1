@@ -52,7 +52,7 @@
         #;(54   cat)
         #;(57   records)
         #;(59   vicinities)
-        #;(60   integer-bits)
+          (60   integer-bits)
           (61   cond)
         #;(63   arrays)
           (64   testing)
