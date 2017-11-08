@@ -5,9 +5,9 @@
 (import
   (except (rnrs) error)
   (rnrs mutable-strings)
-  (srfi :23 error)
+  (srfi s23 error)
   (srfi private include)
-  (srfi :42 eager-comprehensions))
+  (srfi s42 eager-comprehensions))
 
 (define (my-open-output-file filename)
   (open-file-output-port filename
@@ -18,4 +18,4 @@
 (define (my-call-with-input-file filename thunk)
   (call-with-input-file filename thunk))
 
-(include/resolve ("srfi" "%3a42") "examples.scm")
+(include/resolve ("srfi" "s42") "examples.scm")

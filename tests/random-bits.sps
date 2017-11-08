@@ -5,16 +5,16 @@
 (import
   (except (rnrs) error)
   (rnrs r5rs)
-  (srfi :23 error)
+  (srfi s23 error)
   (srfi private include)
-  (srfi :27 random-bits))
+  (srfi s27 random-bits))
 
 (define eval 'ignore)
 (define interaction-environment 'ignore)
 
 (define ascii->char integer->char)
 
-(include/resolve ("srfi" "%3a27") "conftest.scm")
+(include/resolve ("srfi" "s27") "conftest.scm")
 
 (check-mrg32k3a)
 (display "passed (check-mrg32k3a)\n")

@@ -25,8 +25,8 @@
 
 (import (rnrs)
         (only (rnrs r5rs) modulo)
-        (srfi :64 testing)
-        (srfi :45 lazy))
+        (srfi s64 testing)
+        (srfi s45 lazy))
 
 (define-syntax test-output
   (syntax-rules ()

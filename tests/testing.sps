@@ -5,8 +5,8 @@
 (import
   (except (rnrs base) error)
   (rnrs lists)
-  (srfi :23 error)
+  (srfi s23 error)
   (srfi private include)
-  (srfi :64 testing))
+  (srfi s64 testing))
 
-(include/resolve ("srfi" "%3a64") "srfi-64-test.scm")
+(include/resolve ("srfi" "s64") "srfi-64-test.scm")

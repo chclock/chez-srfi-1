@@ -6,9 +6,9 @@
   (except (rnrs) error)
   (rnrs r5rs)
   (rename (only (rnrs) write) (write pretty-write))
-  (srfi :23 error)
-  (srfi :42 eager-comprehensions)
+  (srfi s23 error)
+  (srfi s42 eager-comprehensions)
   (srfi private include)
-  (srfi :67 compare-procedures))
+  (srfi s67 compare-procedures))
 
-(include/resolve ("srfi" "%3a67") "examples.scm")
+(include/resolve ("srfi" "s67") "examples.scm")

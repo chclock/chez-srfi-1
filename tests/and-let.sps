@@ -5,8 +5,8 @@
 (import
   (rnrs)
   (rnrs eval)
-  (srfi :2 and-let*)
-  (srfi :78 lightweight-testing))
+  (srfi s2 and-let)
+  (srfi s78 lightweight-testing))
 
 (define-syntax expect
   (syntax-rules ()

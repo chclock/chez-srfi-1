@@ -2,7 +2,7 @@
 ;; Copyright 2009 Derick Eddington.  My MIT-style license is in the file named
 ;; LICENSE from the original collection this file is distributed with.
 
-(import (rnrs) (srfi :31 rec))
+(import (rnrs) (srfi s31 rec))
 
 (display 
  ((rec (F N) 

@@ -17,7 +17,7 @@
 (import (except (rnrs base) map for-each)
         (rnrs io simple)
         (rnrs r5rs)
-        (srfi :1 lists))
+        (srfi s1 lists))
 
 (define (writeln . xs)
   (for-each display xs)

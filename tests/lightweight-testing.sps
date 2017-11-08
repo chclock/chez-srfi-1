@@ -5,8 +5,8 @@
 (import
   (rnrs)
   (rnrs r5rs)
-  (srfi :42 eager-comprehensions)
+  (srfi s42 eager-comprehensions)
   (srfi private include)
-  (srfi :78 lightweight-testing))
+  (srfi s78 lightweight-testing))
 
-(include/resolve ("srfi" "%3a78") "examples.scm")
+(include/resolve ("srfi" "s78") "examples.scm")
