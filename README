@@ -43,12 +43,15 @@ These SRFIs are available:
   (srfi s67 compare-procedures)
   (srfi s69 basic-hash-tables)
   (srfi s78 lightweight-testing)
+  (srfi s89 optional-parameters)
   (srfi s98 os-environment-variables)
   (srfi s99 records)
   (srfi s111 boxes)
 
 NOTE: We use 's' instead of ':' because files with ':' are not supported in
 Windows.
+NOTE2: SRFI 89 is implemented using symbols ending in ':' as keywords, which
+need to be quoted. This is not fully compliant with the standard.
 
 Other SRFIs are not available because there hasn't been a demand for them or
 they're not possible as an R6RS library.  If you already have ported SRFIs to

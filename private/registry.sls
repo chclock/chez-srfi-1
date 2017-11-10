@@ -64,6 +64,7 @@
           (78   lightweight-testing)
         #;(86   mu-and-nu)
         #;(87   case)
+          (srfi s89 optional-parameters)
         #;(95   sorting-and-merging)
           (98   os-environment-variables)
           (99   records)
