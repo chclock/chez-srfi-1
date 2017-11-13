@@ -47,6 +47,7 @@ These SRFIs are available:
   (srfi s98 os-environment-variables)
   (srfi s99 records)
   (srfi s111 boxes)
+  (srfi s143 fixnums)
 
 NOTE: We use 's' instead of ':' because files with ':' are not supported in
 Windows.
