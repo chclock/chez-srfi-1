@@ -26,7 +26,9 @@
           fxbit-field-reverse)
   
   (import (rnrs base)
-          (rename (rnrs arithmetic fixnums)
+          (rename (except (rnrs arithmetic fixnums) fxcopy-bit)
+                  (fxbit-count r6rs:fxbit-count)
+                  (fxbit-set? r6rs:fxbit-set?)
                   (fxdiv0 fxquotient)
                   (fxmod0 fxremainder)
                   (fxfirst-bit-set fxfirst-set-bit)
@@ -38,6 +40,21 @@
   (define fx-least (least-fixnum))
 
   (define (fxneg x) (fx- x))
+
+  (define (fxbit-count i)
+    (if (fx>=? i 0)
+      (r6rs:fxbit-count i)
+      (r6rs:fxbit-count (fxnot i))))
+
+  (define (fxcopy-bit index to bool)
+    (if bool
+        (fxior to (fxarithmetic-shift-left 1 index))
+        (fxand to (fxnot (fxarithmetic-shift-left 1 index)))))
+
+  (define (fxbit-set? index i)
+    (r6rs:fxbit-set? i index))
+
   (define (fxbit-field-rotate i count start end)
-    (fxrotate-bit-field i start end count))
-  )
+    (if (fxnegative? count)
+      (fxrotate-bit-field i start end (+ count (- start end)))
+      (fxrotate-bit-field i start end count))))
